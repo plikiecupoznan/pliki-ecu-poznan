@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-# Blokuj strony bez wartości SEO
-Disallow: /cdn-cgi/
-
-# Sitemap
-Sitemap: https://pliki-ecu.poznan.pl/sitemap.xml
