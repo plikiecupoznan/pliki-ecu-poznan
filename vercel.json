@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    { "source": "/cennik", "destination": "/cennik/", "permanent": true },
+    { "source": "/uslugi", "destination": "/uslugi/", "permanent": true },
+    { "source": "/o-nas", "destination": "/o-nas/", "permanent": true },
+    { "source": "/kontakt", "destination": "/kontakt/", "permanent": true },
+    { "source": "/uslugi/dpf-off-poznan", "destination": "/uslugi/dpf-off-poznan/", "permanent": true },
+    { "source": "/uslugi/egr-off-poznan", "destination": "/uslugi/egr-off-poznan/", "permanent": true },
+    { "source": "/uslugi/adblue-off-poznan", "destination": "/uslugi/adblue-off-poznan/", "permanent": true },
+    { "source": "/uslugi/lambda-off-poznan", "destination": "/uslugi/lambda-off-poznan/", "permanent": true },
+    { "source": "/uslugi/remapping-poznan", "destination": "/uslugi/remapping-poznan/", "permanent": true },
+    { "source": "/uslugi/odczyt-pliku-ecu", "destination": "/uslugi/odczyt-pliku-ecu/", "permanent": true },
+    { "source": "/polityka-prywatnosci", "destination": "/polityka-prywatnosci/", "permanent": true }
+  ]
+}
