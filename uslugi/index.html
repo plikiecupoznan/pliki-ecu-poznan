@@ -78,7 +78,7 @@ nav a.active{color:var(--accent)}
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px}
 .hero-stat-num{font-family:var(--font-display);font-size:42px;font-weight:900;color:var(--accent)}
 .hero-stat-label{font-size:13px;color:var(--text-muted)}
-.service-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:start}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .service-card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:24px;transition:all 0.3s ease}
 .service-card:hover{border-color:var(--border-accent);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,0.4)}
 .service-card h3{font-family:var(--font-display);font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px}
@@ -120,10 +120,10 @@ nav{display:none}
 }
 .floating-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,var(--accent),var(--accent-dark));padding:16px 20px;z-index:9999;box-shadow:0 -4px 30px rgba(255,69,0,0.4);text-align:center}.floating-cta a{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:18px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#fff;text-decoration:none;background:#000;padding:14px 32px;border-radius:8px;transition:all 0.25s}.floating-cta a:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,0.4)}@media(min-width:769px){.floating-cta{display:none!important}}.seo-keyword{color:var(--accent);font-weight:600}
 @media(max-width:768px){
-.service-cards{grid-template-columns:1fr}
+.services-grid{grid-template-columns:1fr}
 }
 @media(max-width:1024px){
-.service-cards{grid-template-columns:repeat(2,1fr)}
+.services-grid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media(max-width:900px){
@@ -328,7 +328,7 @@ ZADZWOŃ TERAZ
 <section class="section">
 <div class="container">
 <h2 class="section-title">Jakie <span style="color:var(--accent)">modyfikacje plików ECU</span> wykonujemy?</h2>
-<div class="service-cards" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start">
+<div class="services-grid">
 <div class="service-card">
 <div class="service-icon">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3l18 18"/><path d="M10.68 4H19a2 2 0 012 2v9.32"/><path d="M5 5a2 2 0 00-2 2v10a2 2 0 002 2h14"/></svg>
