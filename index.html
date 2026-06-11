@@ -21,8 +21,7 @@
 <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192x192.png" />
 
 <!-- JSON-LD LocalBusiness -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Pliki ECU Poznań",
@@ -32,10 +31,22 @@
   "email": "ecupoznan@gmail.com",
   "areaServed": {
     "@type": "GeoCircle",
-    "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 52.4064, "longitude": 16.9252 },
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.4064,
+      "longitude": 16.9252
+    },
     "geoRadius": "50000"
   },
-  "serviceType": ["DPF OFF", "EGR OFF", "AdBlue OFF", "Remapping ECU", "Lambda OFF", "chiptuning", "mapowanie silnika"],
+  "serviceType": [
+    "DPF OFF",
+    "EGR OFF",
+    "AdBlue OFF",
+    "Remapping ECU",
+    "Lambda OFF",
+    "chiptuning",
+    "mapowanie silnika"
+  ],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Poznań",
@@ -44,33 +55,90 @@
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
     "opens": "00:00",
     "closes": "23:59"
   },
-  "priceRange": "$$"
-}
-</script>
-<script type="application/ld+json">
-{
+  "priceRange": "$$",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://pliki-ecu.poznan.pl/og/og-home.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Pliki ECU Poznań — Mobilny serwis ECU. DPF OFF, EGR OFF, Remapping. Tel. 452 555 922"
+  }
+}</script>
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Pliki ECU Poznań — Mobilny serwis ECU z dojazdem",
   "description": "Mobilny serwis plików ECU w Poznaniu. DPF OFF, EGR OFF, AdBlue OFF, Remapping, Lambda OFF, odczytywanie ECU z dojazdem do klienta.",
-  "provider": { "@type": "LocalBusiness", "name": "Pliki ECU Poznań" },
-  "areaServed": { "@type": "City", "name": "Poznań" },
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Pliki ECU Poznań"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Poznań"
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Usługi Pliki ECU Poznań",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DPF OFF" }, "price": "500", "priceCurrency": "PLN" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EGR OFF" }, "price": "500", "priceCurrency": "PLN" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AdBlue OFF" }, "price": "700", "priceCurrency": "PLN" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Remapping" }, "price": "800", "priceCurrency": "PLN" }
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "DPF OFF"
+        },
+        "price": "500",
+        "priceCurrency": "PLN"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "EGR OFF"
+        },
+        "price": "500",
+        "priceCurrency": "PLN"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AdBlue OFF"
+        },
+        "price": "700",
+        "priceCurrency": "PLN"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Remapping"
+        },
+        "price": "800",
+        "priceCurrency": "PLN"
+      }
     ]
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://pliki-ecu.poznan.pl/og/og-home.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Pliki ECU Poznań — Mobilny serwis ECU. DPF OFF, EGR OFF, Remapping. Tel. 452 555 922"
   }
-}
-</script>
+}</script>
 
 <style>
 :root{--bg-primary:#0A0A0F;--bg-secondary:#12121A;--bg-card:#16161F;--accent:#FF4500;--accent-dark:#E03E00;--accent-glow:rgba(255,69,0,0.25);--white:#FFFFFF;--text-muted:#71717A;--text-secondary:#A1A1AA;--success:#22C55E;--border:rgba(255,255,255,0.06);--border-accent:rgba(255,69,0,0.4);--font-display:'Barlow Condensed',sans-serif;--font-body:'Barlow',sans-serif;--container:1280px;--radius:12px}
@@ -395,6 +463,9 @@ nav{display:none}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://pliki-ecu.poznan.pl/og/og-home.jpg" />
 <meta name="twitter:image:alt" content="Pliki ECU Poznań — Mobilny serwis ECU. DPF OFF, EGR OFF, Remapping. Tel. 452 555 922" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Pliki ECU Poznań","alternateName":["Pliki ECU","Mobilny serwis ECU Poznań"],"url":"https://pliki-ecu.poznan.pl/","description":"Mobilny serwis plików ECU w Poznaniu i okolicach. DPF OFF, EGR OFF, AdBlue OFF, Remapping z dojazdem do klienta.","inLanguage":"pl-PL","publisher":{"@type":"Organization","name":"Pliki ECU Poznań","url":"https://pliki-ecu.poznan.pl/"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://pliki-ecu.poznan.pl/?s={search_term_string}"},"query-input":"required name=search_term_string"}}
+</script>
 </head>
 <body>
 

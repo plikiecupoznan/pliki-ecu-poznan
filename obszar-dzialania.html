@@ -243,8 +243,7 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 @media(max-width:768px){.about-layout{grid-template-columns:1fr}.about-image{display:none}.hero-btns{flex-direction:column}.hamburger{display:flex}}
 
 </style>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Pliki ECU Poznań",
@@ -254,10 +253,22 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
   "email": "ecupoznan@gmail.com",
   "areaServed": {
     "@type": "GeoCircle",
-    "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 52.4064, "longitude": 16.9252 },
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.4064,
+      "longitude": 16.9252
+    },
     "geoRadius": "50000"
   },
-  "serviceType": ["DPF OFF", "EGR OFF", "AdBlue OFF", "Remapping ECU", "Lambda OFF", "chiptuning", "mapowanie silnika"],
+  "serviceType": [
+    "DPF OFF",
+    "EGR OFF",
+    "AdBlue OFF",
+    "Remapping ECU",
+    "Lambda OFF",
+    "chiptuning",
+    "mapowanie silnika"
+  ],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Poznań",
@@ -266,13 +277,27 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
     "opens": "00:00",
     "closes": "23:59"
   },
-  "priceRange": "$$"
-}
-</script>
+  "priceRange": "$$",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://pliki-ecu.poznan.pl/og/og-obszar-dzialania.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Obszar działania — Poznań i okolice do 50 km. Mobilny serwis ECU. Tel. 452 555 922"
+  }
+}</script>
 <!-- Schema: Organization -->
 <script type="application/ld+json">
 {
@@ -390,8 +415,7 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
   ]
 }
 </script>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Mobilny serwis plików ECU — Obszar działania",
@@ -403,31 +427,103 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
     "url": "https://pliki-ecu.poznan.pl"
   },
   "areaServed": [
-    {"@type": "City", "name": "Luboń"},
-    {"@type": "City", "name": "Swarzędz"},
-    {"@type": "City", "name": "Kórnik"},
-    {"@type": "City", "name": "Mosina"},
-    {"@type": "City", "name": "Suchy Las"},
-    {"@type": "City", "name": "Komorniki"},
-    {"@type": "City", "name": "Plewiska"},
-    {"@type": "City", "name": "Dopiewo"},
-    {"@type": "City", "name": "Murowana Goślina"},
-    {"@type": "City", "name": "Rokietnica"},
-    {"@type": "City", "name": "Puszczykowo"},
-    {"@type": "City", "name": "Czerwonak"},
-    {"@type": "City", "name": "Oborniki"},
-    {"@type": "City", "name": "Kleszczewo"},
-    {"@type": "City", "name": "Szamotuły"},
-    {"@type": "City", "name": "Śrem"},
-    {"@type": "City", "name": "Tarnowo Podgórne"},
-    {"@type": "City", "name": "Grodzisk Wielkopolski"},
-    {"@type": "City", "name": "Stęszew"},
-    {"@type": "City", "name": "Kostrzyn"},
-    {"@type": "City", "name": "Buk"},
-    {"@type": "City", "name": "Pobiedziska"}
-  ]
-}
-</script>
+    {
+      "@type": "City",
+      "name": "Luboń"
+    },
+    {
+      "@type": "City",
+      "name": "Swarzędz"
+    },
+    {
+      "@type": "City",
+      "name": "Kórnik"
+    },
+    {
+      "@type": "City",
+      "name": "Mosina"
+    },
+    {
+      "@type": "City",
+      "name": "Suchy Las"
+    },
+    {
+      "@type": "City",
+      "name": "Komorniki"
+    },
+    {
+      "@type": "City",
+      "name": "Plewiska"
+    },
+    {
+      "@type": "City",
+      "name": "Dopiewo"
+    },
+    {
+      "@type": "City",
+      "name": "Murowana Goślina"
+    },
+    {
+      "@type": "City",
+      "name": "Rokietnica"
+    },
+    {
+      "@type": "City",
+      "name": "Puszczykowo"
+    },
+    {
+      "@type": "City",
+      "name": "Czerwonak"
+    },
+    {
+      "@type": "City",
+      "name": "Oborniki"
+    },
+    {
+      "@type": "City",
+      "name": "Kleszczewo"
+    },
+    {
+      "@type": "City",
+      "name": "Szamotuły"
+    },
+    {
+      "@type": "City",
+      "name": "Śrem"
+    },
+    {
+      "@type": "City",
+      "name": "Tarnowo Podgórne"
+    },
+    {
+      "@type": "City",
+      "name": "Grodzisk Wielkopolski"
+    },
+    {
+      "@type": "City",
+      "name": "Stęszew"
+    },
+    {
+      "@type": "City",
+      "name": "Kostrzyn"
+    },
+    {
+      "@type": "City",
+      "name": "Buk"
+    },
+    {
+      "@type": "City",
+      "name": "Pobiedziska"
+    }
+  ],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://pliki-ecu.poznan.pl/og/og-obszar-dzialania.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Obszar działania — Poznań i okolice do 50 km. Mobilny serwis ECU. Tel. 452 555 922"
+  }
+}</script>
 <meta property="og:image" content="https://pliki-ecu.poznan.pl/og/og-obszar-dzialania.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />

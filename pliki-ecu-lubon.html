@@ -14,28 +14,55 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
 <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192x192.png" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Pliki ECU - Luboń","description":"Mobilny serwis plikow ECU w Luboniu i okolicach. DPF OFF, EGR OFF, AdBlue OFF, Remapping z dojazdem.","url":"https://pliki-ecu.poznan.pl/pliki-ecu-lubon.html","telephone":"+48452555922","email":"ecupoznan@gmail.com","areaServed":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":52.4064,"longitude":16.9252},"geoRadius":"10000"},"address":{"@type":"PostalAddress","addressLocality":"Luboń","addressRegion":"Wielkopolskie","addressCountry":"PL"},"priceRange":"$$"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Pliki ECU - Luboń","description":"Mobilny serwis plikow ECU w Luboniu i okolicach. DPF OFF, EGR OFF, AdBlue OFF, Remapping z dojazdem.","url":"https://pliki-ecu.poznan.pl/pliki-ecu-lubon.html","telephone":"+48452555922","email":"ecupoznan@gmail.com","areaServed":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":52.4064,"longitude":16.9252},"geoRadius":"10000"},"address":{"@type":"PostalAddress","addressLocality":"Luboń","addressRegion":"Wielkopolskie","addressCountry":"PL"},"priceRange":"$$","image":{"@type":"ImageObject","url":"https://pliki-ecu.poznan.pl/og/og-dpf-off-lubon.jpg","width":1200,"height":630,"alt":"DPF OFF Luboń — strefa Głogowska. Mobilny serwis ECU. Tel. 452 555 922"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Pliki ECU Poznań","url":"https://pliki-ecu.poznan.pl","logo":"https://pliki-ecu.poznan.pl/favicon.svg","contactPoint":{"@type":"ContactPoint","telephone":"+48452555922","email":"ecupoznan@gmail.com","contactType":"customer service"},"sameAs":["https://www.facebook.com/plikiecupoznan"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy w Luboniu wyłaczycie AdBlue w Mercedesie Sprinter 2.1 CDI?","acceptedAnswer":{"@type":"Answer","text":"Tak, AdBlue OFF w Mercedesach Sprinter 2.1 CDI to nasza codziennosc - obslugujemy floty kurierskie ze strefy Glogowska. Usluga trwa 2-3 godziny, koszt od 700 zl. Po modyfikacji nie trzeba tankowac plynu AdBlue, znika ryzyko awarii pompy SCR, auto nie wchodzi w tryb awaryjny."}},{"@type":"Question","name":"Czy w Luboniu obslugujecie auta z instalacja LPG?","acceptedAnswer":{"@type":"Answer","text":"Tak, Lambda OFF po montazu LPG to nasza specjalnosc. W Luboniu czesto pracujemy z Golfami 1.6 MPI, Octaviami 1.6, Astrami 1.6 po przejsciu na gaz. Po Lambda OFF bledy P0420, P0136, P0171 znikaja, silnik pracuje plynnie na gazie. Usluga trwa 1-2h, koszt od 400 zl."}},{"@type":"Question","name":"Ile trwa DPF OFF w Luboniu dla busa dostawczego?","acceptedAnswer":{"@type":"Answer","text":"Standardowo 1-2 godziny. Dla Mercedesow Sprinterow, Fiatow Ducato i Fordow Transitow pracujacych w kurierach to typowy czas. Przed modyfikacja robimy pelna diagnostyke, po - archiwizujemy oryginalny plik. W trakcie mozesz zostac przy aucie lub wrocic po odbior."}},{"@type":"Question","name":"Czy dojezdzacie do osiedli w Luboniu i okolicznych wsi?","acceptedAnswer":{"@type":"Answer","text":"Tak, obslugujemy caly Lubon i okolice w promieniu 10 km: Krzyzowniki, Czapurki, Stary Lubon, Nowy Lubon, Szreniawa, Daszewice, Wronczyn. Dojazd do tych miejscowosci jest w cenie uslugi, bez dodatkowych oplat za teren. Umow wizyte telefonicznie 452 555 922."}}]}</script>
 
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Serwis ECU Luboń — mobilny serwis z dojazdem",
   "description": "Mobilny serwis ECU w Luboń. DPF OFF, EGR OFF, AdBlue OFF, Remapping i odczyt plików ECU z dojazdem do klienta.",
-  "provider": { "@type": "LocalBusiness", "name": "Pliki ECU Poznań" },
-  "areaServed": { "@type": "City", "name": "Luboń" },
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Pliki ECU Poznań"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Luboń"
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Usługi ECU Luboń",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DPF OFF Luboń" }, "price": "500", "priceCurrency": "PLN" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EGR OFF Luboń" }, "price": "500", "priceCurrency": "PLN" }
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "DPF OFF Luboń"
+        },
+        "price": "500",
+        "priceCurrency": "PLN"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "EGR OFF Luboń"
+        },
+        "price": "500",
+        "priceCurrency": "PLN"
+      }
     ]
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://pliki-ecu.poznan.pl/og/og-dpf-off-lubon.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "DPF OFF Luboń — strefa Głogowska. Mobilny serwis ECU. Tel. 452 555 922"
   }
-}
-</script>
+}</script>
 
 <style>
 :root{--bg-primary:#0A0A0F;--bg-secondary:#12121A;--bg-card:#16161F;--accent:#FF4500;--accent-dark:#E03E00;--accent-glow:rgba(255,69,0,0.25);--white:#FFFFFF;--text-muted:#71717A;--text-secondary:#A1A1AA;--success:#22C55E;--border:rgba(255,255,255,0.06);--border-accent:rgba(255,69,0,0.4);--font-display:'Barlow Condensed',sans-serif;--font-body:'Barlow',sans-serif;--container:1280px;--radius:12px}
