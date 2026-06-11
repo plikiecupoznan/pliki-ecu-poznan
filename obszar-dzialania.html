@@ -242,6 +242,17 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 
 @media(max-width:768px){.about-layout{grid-template-columns:1fr}.about-image{display:none}.hero-btns{flex-direction:column}.hamburger{display:flex}}
 
+.faq-section{padding:60px 0 80px;background:var(--bg-secondary)}
+.faq-grid{display:grid;gap:16px}
+.faq-item{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--bg-card)}
+.faq-question{font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--text-primary);transition:color 0.2s}
+.faq-question:hover{color:var(--accent)}
+.faq-question::after{content:"+";font-size:24px;font-weight:300;color:var(--accent);transition:transform 0.3s}
+.faq-item.open .faq-question::after{content:"−"}
+.faq-answer{padding:0 24px;max-height:0;overflow:hidden;transition:max-height 0.3s,padding 0.3s;color:var(--text-secondary);text-align:left}
+.faq-item.open .faq-answer{max-height:500px;padding:20px 24px}
+.faq-answer p{margin:0}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -352,42 +363,42 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Kim jest Pliki ECU Poznań?",
+      "name": "Ile kosztuje dojazd mobilnego serwisu do mojego miasta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pliki ECU Poznań to mobilny serwis plików ECU z 5+ lat doświadczenia. Specjalizujemy się w DPF OFF, EGR OFF, AdBlue OFF, Lambda OFF i remapping. Dojeżdżamy do klienta w promieniu 50 km od Poznania."
+        "text": "Koszt dojazdu ustalany jest każdorazowo indywidualnie podczas rozmowy telefonicznej. Wszystko zależy od lokalizacji, terminu wizyty oraz zakresu usługi — wystarczy jeden telefon, a podamy dokładną wycenę uwzględniającą dojazd."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie usługi oferujecie?",
+      "name": "Jaki jest czas dojazdu z Poznania do mojego miasta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oferujemy: DPF OFF, EGR OFF, AdBlue OFF, Lambda OFF, Remapping Stage 1 i Stage 2, odczyt pliku ECU. Wszystkie usługi wykonujemy z dojazdem do klienta."
+        "text": "Średni czas dojazdu do klienta waha się od 15 do 50 minut — zależy od konkretnej miejscowości. Dla miast położonych najbliżej Poznania (do 12 km) jesteśmy w stanie dotrzeć w 15–20 minut. Dokładny czas dojazdu do Twojego miasta podajemy telefonicznie."
       }
     },
     {
       "@type": "Question",
-      "name": "Czym różni się mobilny serwis od tradycyjnego?",
+      "name": "Czy obsługujecie małe miejscowości w pobliżu Poznania?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mobilny serwis oznacza, że przyjeżdżamy do Ciebie — pod dom, do pracy, na parking. Nie musisz nigdzie jechać. Cały proces trwa 1-3 godziny na miejscu."
+        "text": "Tak — obsługujemy zarówno 22 główne miasta w Wielkopolsce, jak i mniejsze miejscowości w ich bezpośrednim sąsiedztwie. Skontaktuj się z nami telefonicznie, a potwierdzimy czy dojeżdżamy do Twojej miejscowości."
       }
     },
     {
       "@type": "Question",
-      "name": "Czy przed modyfikacją archiwizujecie plik ECU?",
+      "name": "Czy dojeżdżacie w weekendy i święta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak! Przed każdą modyfikacją archiwizujemy oryginalny plik ECU. Zawsze możesz wrócić do fabrycznych ustawień — to nasza gwarancja bezpieczeństwa."
+        "text": "Tak, mobilny serwis plików ECU działa 7 dni w tygodniu, również w weekendy i święta. Wizyty umawiamy indywidualnie — często możliwa jest realizacja jeszcze tego samego dnia."
       }
     },
     {
       "@type": "Question",
-      "name": "W jakich miastach pracujecie?",
+      "name": "Czy mogę umówić wizytę na konkretną godzinę w moim mieście?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dojeżdżamy do klienta w promieniu 50 km od Poznania. Obsługujemy: Luboń, Swarzędz, Puszczykowo, Mosina, Kórnik, Buk, Skórzewo, Piła, Czarnków, Wągrowiec, Oborniki, Szamotuły i wiele innych."
+        "text": "Oczywiście. Po ustaleniu zakresu usługi telefonicznie dobieramy termin dogodny dla klienta — również konkretną godzinę. W wybranych miastach możliwa jest realizacja wizyty w dniu zgłoszenia."
       }
     }
   ]
@@ -569,7 +580,7 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 </div>
 </div>
 <div class="section-label">Mobilny serwis ECU w Wielkopolsce</div>
-<h1>Mobilny serwis plików ECU — <span>23 miasta</span> w Wielkopolsce</h1>
+<h1>Mobilny serwis ECU — <span>22 miasta</span> w Wielkopolsce</h1>
 <p class="hero-description">Dojeżdżamy do Ciebie z pełnym wyposażeniem diagnostycznym w promieniu <strong class="seo-keyword">50 km od Poznania</strong>. Oferujemy <a href="/uslugi/dpf-off-poznan/"><strong class="seo-keyword">DPF OFF</strong></a>, <a href="/uslugi/egr-off-poznan/"><strong class="seo-keyword">EGR OFF</strong></a>, <a href="/uslugi/adblue-off-poznan/"><strong class="seo-keyword">AdBlue OFF</strong></a>, <a href="/uslugi/lambda-off-poznan/"><strong class="seo-keyword">Lambda OFF</strong></a>, <a href="/uslugi/remapping-poznan/"><strong class="seo-keyword">Remapping</strong></a> (Stage 1 i Stage 2) oraz <a href="/uslugi/odczyt-pliku-ecu/"><strong class="seo-keyword">Odczyt pliku ECU</strong></a>. Każda modyfikacja z <strong class="seo-keyword">gwarancją satysfakcji</strong>.</p>
 </div>
 </div>
@@ -601,81 +612,97 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 <div class="city-card">
 <h3><a href="/pliki-ecu-lubon.html">Luboń</a></h3>
 <p>Mobilny serwis plików ECU dojeżdża do Lubonia z pełnym wyposażeniem. <strong class="seo-keyword">DPF OFF, EGR OFF Luboń</strong>.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 8 km od Poznania · ⏱️ Dojazd: 15 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-lubon.html">DPF OFF Luboń</a>
 <a href="/pliki-ecu-lubon.html">EGR OFF Luboń</a>
 <a href="/pliki-ecu-lubon.html">Remapping Luboń</a>
 </div>
+<a href="/pliki-ecu-lubon.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Lubonia →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-swarzedz.html">Swarzędz</a></h3>
 <p>Usługi plików ECU z dojazdem do Swarzędza. <strong class="seo-keyword">EGR OFF, AdBlue OFF Swarzędz</strong>.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 12 km od Poznania · ⏱️ Dojazd: 18 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-swarzedz.html">DPF OFF Swarzędz</a>
 <a href="/pliki-ecu-swarzedz.html">EGR OFF Swarzędz</a>
 <a href="/pliki-ecu-swarzedz.html">Remapping Swarzędz</a>
 </div>
+<a href="/pliki-ecu-swarzedz.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Swarzędza →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-kornik.html">Kórnik</a></h3>
 <p>Serwis ECU Kórnik — mobilny mechanik z plikami ECU przyjeżdża na miejsce. <strong class="seo-keyword">Lambda OFF Kórnik</strong>.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 20 km od Poznania · ⏱️ Dojazd: 25 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-kornik.html">DPF OFF Kórnik</a>
 <a href="/pliki-ecu-kornik.html">EGR OFF Kórnik</a>
 <a href="/pliki-ecu-kornik.html">Remapping Kórnik</a>
 </div>
+<a href="/pliki-ecu-kornik.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Kórnika →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-mosina.html">Mosina</a></h3>
 <p>Mobilny serwis plików ECU w Mosinie. Programowanie ECU, <strong class="seo-keyword">Odczyt pliku ECU Mosina</strong>.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 20 km od Poznania · ⏱️ Dojazd: 25 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-mosina.html">DPF OFF Mosina</a>
 <a href="/pliki-ecu-mosina.html">EGR OFF Mosina</a>
 <a href="/pliki-ecu-mosina.html">Remapping Mosina</a>
 </div>
+<a href="/pliki-ecu-mosina.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Mosiny →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-suchy-las.html">Suchy Las</a></h3>
 <p>Dojazd do klienta w Suchym Lesie. <strong class="seo-keyword">AdBlue OFF, Lambda OFF Suchy Las</strong>.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 10 km od Poznania · ⏱️ Dojazd: 15 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-suchy-las.html">DPF OFF Suchy Las</a>
 <a href="/pliki-ecu-suchy-las.html">EGR OFF Suchy Las</a>
 <a href="/pliki-ecu-suchy-las.html">Remapping Suchy Las</a>
 </div>
+<a href="/pliki-ecu-suchy-las.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Suchego Lasu →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-komorniki.html">Komorniki</a></h3>
 <p><strong class="seo-keyword">Serwis ECU Komorniki</strong> — mobilny serwis plików ECU z dojazdem do klienta.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 10 km od Poznania · ⏱️ Dojazd: 15 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-komorniki.html">DPF OFF Komorniki</a>
 <a href="/pliki-ecu-komorniki.html">EGR OFF Komorniki</a>
 <a href="/pliki-ecu-komorniki.html">Remapping Komorniki</a>
 </div>
+<a href="/pliki-ecu-komorniki.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Komornik →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-plewiska.html">Plewiska</a></h3>
 <p>Mobilny serwis plików ECU Plewiska — <strong class="seo-keyword">ECU Plewiska</strong> na miejscu.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 10 km od Poznania · ⏱️ Dojazd: 15 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-plewiska.html">DPF OFF Plewiska</a>
 <a href="/pliki-ecu-plewiska.html">EGR OFF Plewiska</a>
 <a href="/pliki-ecu-plewiska.html">Remapping Plewiska</a>
 </div>
+<a href="/pliki-ecu-plewiska.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Plewisk →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-dopiewo.html">Dopiewo</a></h3>
 <p>Usługi ECU Dopiewo — Remapping, <strong class="seo-keyword">DPF OFF, EGR OFF Dopiewo</strong> z dojazdem.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 15 km od Poznania · ⏱️ Dojazd: 20 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-dopiewo.html">DPF OFF Dopiewo</a>
 <a href="/pliki-ecu-dopiewo.html">EGR OFF Dopiewo</a>
 <a href="/pliki-ecu-dopiewo.html">Remapping Dopiewo</a>
 </div>
+<a href="/pliki-ecu-dopiewo.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Dopiewa →</a>
 </div>
 
 </div>
@@ -688,61 +715,73 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 <div class="city-card">
 <h3><a href="/pliki-ecu-murowana-goslina.html">Murowana Goślina</a></h3>
 <p>Mobilny serwis plików ECU w Murowanej Goślinie. <strong class="seo-keyword">Lambda OFF, AdBlue OFF Murowana Goślina</strong>.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 20 km od Poznania · ⏱️ Dojazd: 25 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-murowana-goslina.html">DPF OFF Murowana Goślina</a>
 <a href="/pliki-ecu-murowana-goslina.html">EGR OFF Murowana Goślina</a>
 <a href="/pliki-ecu-murowana-goslina.html">Remapping Murowana Goślina</a>
 </div>
+<a href="/pliki-ecu-murowana-goslina.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Murowanej Gośliny →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-rokietnica.html">Rokietnica</a></h3>
 <p><strong class="seo-keyword">Programowanie ECU Rokietnica</strong> — dojazd do klienta, pełen serwis plików ECU.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 15 km od Poznania · ⏱️ Dojazd: 20 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-rokietnica.html">DPF OFF Rokietnica</a>
 <a href="/pliki-ecu-rokietnica.html">EGR OFF Rokietnica</a>
 <a href="/pliki-ecu-rokietnica.html">Remapping Rokietnica</a>
 </div>
+<a href="/pliki-ecu-rokietnica.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Rokietnicy →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-puszczykowo.html">Puszczykowo</a></h3>
 <p><strong class="seo-keyword">Serwis ECU Puszczykowo</strong> — DPF OFF, Remapping z dojazdem do klienta.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 15 km od Poznania · ⏱️ Dojazd: 20 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-puszczykowo.html">DPF OFF Puszczykowo</a>
 <a href="/pliki-ecu-puszczykowo.html">EGR OFF Puszczykowo</a>
 <a href="/pliki-ecu-puszczykowo.html">Remapping Puszczykowo</a>
 </div>
+<a href="/pliki-ecu-puszczykowo.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Puszczykowa →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-czerwonak.html">Czerwonak</a></h3>
 <p>Mobilny serwis plików ECU Czerwonak — <strong class="seo-keyword">ECU Czerwonak</strong> na miejscu.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 12 km od Poznania · ⏱️ Dojazd: 18 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-czerwonak.html">DPF OFF Czerwonak</a>
 <a href="/pliki-ecu-czerwonak.html">EGR OFF Czerwonak</a>
 <a href="/pliki-ecu-czerwonak.html">Remapping Czerwonak</a>
 </div>
+<a href="/pliki-ecu-czerwonak.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Czerwonaka →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-oborniki.html">Oborniki</a></h3>
 <p>Programowanie ECU Oborniki — <strong class="seo-keyword">AdBlue OFF, Lambda OFF Oborniki</strong> z dojazdem.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 35 km od Poznania · ⏱️ Dojazd: 40 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-oborniki.html">DPF OFF Oborniki</a>
 <a href="/pliki-ecu-oborniki.html">EGR OFF Oborniki</a>
 <a href="/pliki-ecu-oborniki.html">Remapping Oborniki</a>
 </div>
+<a href="/pliki-ecu-oborniki.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Obornik →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-kleszczewo.html">Kleszczewo</a></h3>
 <p>Mobilny serwis ECU Kleszczewo — <strong class="seo-keyword">Remapping, DPF OFF Kleszczewo</strong> na miejscu.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 20 km od Poznania · ⏱️ Dojazd: 25 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-kleszczewo.html">DPF OFF Kleszczewo</a>
 <a href="/pliki-ecu-kleszczewo.html">EGR OFF Kleszczewo</a>
 <a href="/pliki-ecu-kleszczewo.html">Remapping Kleszczewo</a>
 </div>
+<a href="/pliki-ecu-kleszczewo.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Kleszczewa →</a>
 </div>
 
 </div>
@@ -755,81 +794,97 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 <div class="city-card">
 <h3><a href="/pliki-ecu-szamotuly.html">Szamotuły</a></h3>
 <p>Serwis plików ECU Szamotuły — mobilny mechanik z dojazdem do 50 km.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 40 km od Poznania · ⏱️ Dojazd: 45 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-szamotuly.html">DPF OFF Szamotuły</a>
 <a href="/pliki-ecu-szamotuly.html">EGR OFF Szamotuły</a>
 <a href="/pliki-ecu-szamotuly.html">Remapping Szamotuły</a>
 </div>
+<a href="/pliki-ecu-szamotuly.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Szamotuł →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-srem.html">Śrem</a></h3>
 <p>Mobilny serwis ECU Śrem — <strong class="seo-keyword">DPF OFF, EGR OFF, Remapping Śrem</strong> z dojazdem.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 40 km od Poznania · ⏱️ Dojazd: 45 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-srem.html">DPF OFF Śrem</a>
 <a href="/pliki-ecu-srem.html">EGR OFF Śrem</a>
 <a href="/pliki-ecu-srem.html">Remapping Śrem</a>
 </div>
+<a href="/pliki-ecu-srem.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Śremu →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-tarnowo-podgorne.html">Tarnowo Podgórne</a></h3>
 <p>Programowanie ECU Tarnowo Podgórne — <strong class="seo-keyword">Lambda OFF, AdBlue OFF Tarnowo Podgórne</strong>.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 12 km od Poznania · ⏱️ Dojazd: 18 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-tarnowo-podgorne.html">DPF OFF Tarnowo Podgórne</a>
 <a href="/pliki-ecu-tarnowo-podgorne.html">EGR OFF Tarnowo Podgórne</a>
 <a href="/pliki-ecu-tarnowo-podgorne.html">Remapping Tarnowo Podgórne</a>
 </div>
+<a href="/pliki-ecu-tarnowo-podgorne.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Tarnowa Podgórnego →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-grodzisk-wielkopolski.html">Grodzisk Wielkopolski</a></h3>
 <p>Usługi plików ECU Grodzisk Wlkp. — <strong class="seo-keyword">Remapping, DPF OFF Grodzisk Wlkp.</strong> z dojazdem.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 50 km od Poznania · ⏱️ Dojazd: 50 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-grodzisk-wielkopolski.html">DPF OFF Grodzisk Wlkp.</a>
 <a href="/pliki-ecu-grodzisk-wielkopolski.html">EGR OFF Grodzisk Wlkp.</a>
 <a href="/pliki-ecu-grodzisk-wielkopolski.html">Remapping Grodzisk Wlkp.</a>
 </div>
+<a href="/pliki-ecu-grodzisk-wielkopolski.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Grodziska Wlkp →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-steszew.html">Stęszew</a></h3>
 <p>Mobilny serwis plików ECU Stęszew — <strong class="seo-keyword">AdBlue OFF, Lambda OFF Stęszew</strong> na miejscu.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 25 km od Poznania · ⏱️ Dojazd: 30 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-steszew.html">DPF OFF Stęszew</a>
 <a href="/pliki-ecu-steszew.html">EGR OFF Stęszew</a>
 <a href="/pliki-ecu-steszew.html">Remapping Stęszew</a>
 </div>
+<a href="/pliki-ecu-steszew.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Stęszewa →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-kostrzyn.html">Kostrzyn</a></h3>
 <p><strong class="seo-keyword">Serwis ECU Kostrzyn</strong> — programowanie ECU z dojazdem do klienta.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 30 km od Poznania · ⏱️ Dojazd: 35 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-kostrzyn.html">DPF OFF Kostrzyn</a>
 <a href="/pliki-ecu-kostrzyn.html">EGR OFF Kostrzyn</a>
 <a href="/pliki-ecu-kostrzyn.html">Remapping Kostrzyn</a>
 </div>
+<a href="/pliki-ecu-kostrzyn.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Kostrzyna →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-buk.html">Buk</a></h3>
 <p>Mobilny serwis plików ECU Buk — <strong class="seo-keyword">Remapping, EGR OFF Buk</strong> z dojazdem.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 28 km od Poznania · ⏱️ Dojazd: 30 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-buk.html">DPF OFF Buk</a>
 <a href="/pliki-ecu-buk.html">EGR OFF Buk</a>
 <a href="/pliki-ecu-buk.html">Remapping Buk</a>
 </div>
+<a href="/pliki-ecu-buk.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Buku →</a>
 </div>
 
 <div class="city-card">
 <h3><a href="/pliki-ecu-pobiedziska.html">Pobiedziska</a></h3>
 <p>Usługi ECU Pobiedziska — <strong class="seo-keyword">DPF OFF, Lambda OFF Pobiedziska</strong> na miejscu.</p>
+<div style="font-size:13px;color:var(--accent);font-weight:600;margin:8px 0">📍 30 km od Poznania · ⏱️ Dojazd: 35 min</div>
 <div class="city-links">
 <a href="/pliki-ecu-pobiedziska.html">DPF OFF Pobiedziska</a>
 <a href="/pliki-ecu-pobiedziska.html">EGR OFF Pobiedziska</a>
 <a href="/pliki-ecu-pobiedziska.html">Remapping Pobiedziska</a>
 </div>
+<a href="/pliki-ecu-pobiedziska.html" style="display:inline-block;margin-top:12px;padding:8px 16px;background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;transition:all 0.2s">📍 Strona Pobiedzisk →</a>
 </div>
 
 </div>
@@ -838,11 +893,39 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 </div>
 </section>
 
+<section class="faq-section">
+<div class="container">
+<h2 class="section-title">Najczęściej zadawane <span>pytania o dojazd</span></h2>
+<div class="faq-grid">
+<div class="faq-item">
+<div class="faq-question">Ile kosztuje dojazd mobilnego serwisu do mojego miasta?</div>
+<div class="faq-answer"><p>Koszt dojazdu ustalany jest każdorazowo indywidualnie podczas rozmowy telefonicznej. Wszystko zależy od lokalizacji, terminu wizyty oraz zakresu usługi — wystarczy jeden telefon, a podamy dokładną wycenę uwzględniającą dojazd.</p></div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Jaki jest czas dojazdu z Poznania do mojego miasta?</div>
+<div class="faq-answer"><p>Średni czas dojazdu do klienta waha się od 15 do 50 minut — zależy od konkretnej miejscowości. Dla miast położonych najbliżej Poznania (do 12 km) jesteśmy w stanie dotrzeć w 15–20 minut. Dokładny czas dojazdu do Twojego miasta podajemy telefonicznie.</p></div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Czy obsługujecie małe miejscowości w pobliżu Poznania?</div>
+<div class="faq-answer"><p>Tak — obsługujemy zarówno 22 główne miasta w Wielkopolsce, jak i mniejsze miejscowości w ich bezpośrednim sąsiedztwie. Skontaktuj się z nami telefonicznie, a potwierdzimy czy dojeżdżamy do Twojej miejscowości.</p></div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Czy dojeżdżacie w weekendy i święta?</div>
+<div class="faq-answer"><p>Tak, mobilny serwis plików ECU działa 7 dni w tygodniu, również w weekendy i święta. Wizyty umawiamy indywidualnie — często możliwa jest realizacja jeszcze tego samego dnia.</p></div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Czy mogę umówić wizytę na konkretną godzinę w moim mieście?</div>
+<div class="faq-answer"><p>Oczywiście. Po ustaleniu zakresu usługi telefonicznie dobieramy termin dogodny dla klienta — również konkretną godzinę. W wybranych miastach możliwa jest realizacja wizyty w dniu zgłoszenia.</p></div>
+</div>
+</div>
+</div>
+</section>
+
 <section class="cta-section">
 <div class="container">
 <div class="section-label">Potrzebujesz plików ECU w Wielkopolsce?</div>
 <h2 class="section-title">Zadzwoń i umów <span>wizytę!</span></h2>
-<p style="color:var(--text-secondary);max-width:500px;margin:0 auto 24px">Mobilny serwis plików ECU dojeżdża do Ciebie w całej Wielkopolsce — 23 miasta w promieniu 50 km od Poznania. Zadzwoń teraz!</p>
+<p style="color:var(--text-secondary);max-width:500px;margin:0 auto 24px">Mobilny serwis plików ECU dojeżdża do Ciebie w całej Wielkopolsce — 22 miasta w promieniu 50 km od Poznania. Zadzwoń teraz!</p>
 <a href="tel:+48452555922" style="font-family:var(--font-display);font-size:clamp(32px,5vw,52px);font-weight:900;color:var(--accent);display:block;margin-bottom:16px">452 555 922</a>
 <a href="/uslugi/" class="btn btn-ghost">ZOBACZ WSZYSTKIE USŁUGI</a>
 </div>
@@ -877,7 +960,7 @@ ecupoznan@gmail.com
 <div>
 <div class="footer-col-title">OBSZAR DZIAŁANIA</div>
 <div class="footer-links">
-<a href="/obszar-dzialania.html" style="color:var(--accent);font-weight:600">23 miasta w okolicach Poznania →</a>
+<a href="/obszar-dzialania.html" style="color:var(--accent);font-weight:600">22 miasta w okolicach Poznania →</a>
 </div>
 </div>
 </div>
@@ -912,5 +995,15 @@ if (hamburger && mobileNav) {
 }
 </script>
 
+<script>
+document.querySelectorAll('.faq-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el) { el.classList.remove('open'); });
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
 </body>
 </html>
