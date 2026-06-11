@@ -253,6 +253,25 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 .faq-item.open .faq-answer{max-height:500px;padding:20px 24px}
 .faq-answer p{margin:0}
 
+.cities-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:32px}
+.city-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:all 0.3s}
+.city-card:hover{border-color:var(--border-accent);transform:translateY(-2px)}
+.city-card h3{font-family:var(--font-display);font-size:22px;font-weight:800;margin-bottom:12px;text-transform:uppercase}
+.city-card h3 a{color:var(--white);text-decoration:none}
+.city-card h3 a:hover{color:var(--accent)}
+.city-card p{color:var(--text-secondary);font-size:15px;line-height:1.6;margin-bottom:8px}
+.city-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.city-links a{font-size:13px;color:var(--text-muted);padding:4px 10px;border-radius:6px;background:rgba(255,69,0,0.05);text-decoration:none;transition:all 0.2s}
+.city-links a:hover{color:var(--accent);background:rgba(255,69,0,0.12)}
+.district-section{margin-bottom:48px}
+.district-title{font-family:var(--font-display);font-size:clamp(22px,3vw,28px);font-weight:800;text-transform:uppercase;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--border);color:var(--white)}
+.cta-section{position:relative;overflow:hidden;text-align:center;padding:80px 0;background:var(--bg-secondary);border-top:1px solid var(--border)}
+.cta-section .container{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center}
+.cta-section .section-label{text-align:center}
+.cta-section .section-title{text-align:center;margin-bottom:16px}
+.cta-section p{text-align:center;color:var(--text-secondary);max-width:500px;margin:0 auto 24px}
+.cta-section a[href^="tel:"],.cta-section .btn{margin-left:auto;margin-right:auto}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -543,6 +562,11 @@ footer{background:#08080D;border-top:1px solid var(--border);padding:56px 0 28px
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://pliki-ecu.poznan.pl/og/og-obszar-dzialania.jpg" />
 <meta name="twitter:image:alt" content="Obszar działania — Poznań i okolice do 50 km. Mobilny serwis ECU. Tel. 452 555 922" />
+
+<meta property="og:url" content="https://pliki-ecu.poznan.pl/obszar-dzialania.html">
+<meta property="og:site_name" content="Pliki ECU Poznań">
+<meta name="twitter:title" content="Zasięg serwisu ECU — 22 miasta Wielkopolski | Pliki ECU Poznań">
+<meta name="twitter:description" content="Mobilny serwis ECU z dojazdem do 22 miast Wielkopolski. DPF OFF, EGR OFF, AdBlue OFF, Remapping — Luboń, Swarzędz, Komorniki, Buk i więcej. Zadzwoń 452 555 922!">
 </head>
 <body>
 <header>
